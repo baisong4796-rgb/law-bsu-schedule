@@ -1,0 +1,686 @@
+[
+  {
+    "date": "2026-10-12",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Актуальные проблемы регулирования и реализации публично-правовых отношений (лекция) лектор Хашковский Никита (аудитория 609) / Actual Problems of Regulation and Realization of Public Law Relations  (lectures) Lecturer  Khashkovsky Nikita  (classroom 609)",
+    "summary": "Actual Problems of Regulation and Realization of Public Law Relations",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-12",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Актуальные проблемы регулирования и реализации публично-правовых отношений (лекция) лектор Хашковский Никита (аудитория 609) / Actual Problems of Regulation and Realization of Public Law Relations  (lectures) Lecturer  Khashkovsky Nikita  (classroom 609",
+    "summary": "Actual Problems of Regulation and Realization of Public Law Relations",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-12",
+    "start": "17:20",
+    "end": "18:40",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 609) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 609)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-12",
+    "start": "18:50",
+    "end": "20:10",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 609) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 609)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-13",
+    "start": "09:30",
+    "end": "10:50",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 304)  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 304)",
+    "summary": "International Economic Law",
+    "room": "304",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-13",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 304)  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 304)",
+    "summary": "International Economic Law",
+    "room": "304",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-13",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Правовое обеспечение развития электронного государства (лекция) лектор Бодакова Ольга (аудитория 304) / Legal Frames for Development of the Electronic State (lectures)  Lecturer Bodakova Olga (classroom 304)",
+    "summary": "Legal Frames for Development of the Electronic State",
+    "room": "304",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-13",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 304) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 304)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "304",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-14",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Институциональное право Союзного государства, ЕАЭС и СНГ (лекция) лектор Боголейко Алина (аудитория 305)  / Institutional law of the Union State, EAEU and CIS (lectures) Lecturer Bogolejko Alina (classroom 305)",
+    "summary": "Institutional law of the Union State, EAEU and CIS",
+    "room": "305",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-14",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 309) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 309)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "309",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-14",
+    "start": "17:20",
+    "end": "18:40",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 609) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 609)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-15",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Институциональное право Союзного государства, ЕАЭС и СНГ (лекция) лектор Боголейко Алина (аудитория 513)   / Institutional law of the Union State, EAEU and CIS (lectures) Lecturer Bogolejko Alina (classroom 513)",
+    "summary": "Institutional law of the Union State, EAEU and CIS",
+    "room": "513",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-15",
+    "start": "17:20",
+    "end": "18:40",
+    "text": "Договорное право и составление юридических документов (лекция) лектор Лазарчук Елена (аудитория 513) / Contract Law and Legal Drafting (lectures) Lecturer Lazarchuk   Elena   (classroom 513)",
+    "summary": "Contract Law and Legal Drafting",
+    "room": "513",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-15",
+    "start": "18:50",
+    "end": "20:10",
+    "text": "Договорное право и составление юридических документов (лекция) лектор Лазарчук Елена (аудитория 513) / Contract Law and Legal Drafting (lectures) Lecturer Lazarchuk   Elena    (classroom 513)",
+    "summary": "Contract Law and Legal Drafting",
+    "room": "513",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-15",
+    "start": "20:20",
+    "end": "21:40",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 513) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 513)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "513",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-16",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Правовое обеспечение развития электронного государства (лекция) лектор Бодакова Ольга (аудитория 609) / Legal Frames for Development of the Electronic State (lectures)  Lecturer Bodakova Olga (classroom 609)",
+    "summary": "Legal Frames for Development of the Electronic State",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-16",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Институциональное право Союзного государства, ЕАЭС и СНГ (лекция) лектор Боголейко Алина (аудитория 609)  /  Institutional law of the Union State, EAEU and CIS (lectures) Lecturer Bogolejko Alina (classroom 609)",
+    "summary": "Institutional law of the Union State, EAEU and CIS",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-16",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Международно-правовая охрана интеллектуальной собственности (лекция) лектор Свадковская Елена (аудитория 609) / International Protection of Intellectual Property Rights (lectures)  Lecturer Svadkovskaya Elena (room 609)",
+    "summary": "International Protection of Intellectual Property Rights",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-16",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 609) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 609)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-17",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 305) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 305)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "305",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-17",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 609) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 609)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-17",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Современные проблемы и методология юридической науки (лекция) лектор Калинин Сергей (аудитория 609) / Modern Problems and Methodology of Legal Science (lectures) Lecturer Kalinin Siarhei   (classroom 609)",
+    "summary": "Modern Problems and Methodology of Legal Science",
+    "room": "609",
+    "sheet": "12.10-17.10"
+  },
+  {
+    "date": "2026-10-19",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Международно-правовая охрана интеллектуальной собственности (лекция) лектор Свадковская Елена (аудитория 609) / International Protection of Intellectual Property Rights (lectures)  Lecturer Svadkovskaya Elena (room 609)",
+    "summary": "International Protection of Intellectual Property Rights",
+    "room": "609",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-19",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Актуальные проблемы регулирования и реализации публично-правовых отношений (лекция) лектор Калинин Сергей (аудитория 609) / Actual Problems of Regulation and Realization of Public Law Relations  (lectures) Lecturer  Kalinin Siarhei     (classroom 609)",
+    "summary": "Actual Problems of Regulation and Realization of Public Law Relations",
+    "room": "609",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-19",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Актуальные проблемы регулирования и реализации публично-правовых отношений (лекция) лектор Хашковский Никита (аудитория 609) / Actual Problems of Regulation and Realization of Public Law Relations  (lectures) Lecturer  Khashkovsky Nikita  (classroom 609)",
+    "summary": "Actual Problems of Regulation and Realization of Public Law Relations",
+    "room": "609",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-19",
+    "start": "17:20",
+    "end": "18:40",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (лекция) лектор Иванова Татьяна (аудитория 609) / Lawmaking of Representative, Executive and Judicial Authorities (lectures) Lecturer  Ivanova Tatsiana  (classroom 609)",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "609",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-20",
+    "start": "09:30",
+    "end": "10:50",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 304)  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 304)",
+    "summary": "International Economic Law",
+    "room": "304",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-20",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 304)  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 304)",
+    "summary": "International Economic Law",
+    "room": "304",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-20",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Правовое обеспечение развития электронного государства (лекция) лектор Бодакова Ольга (аудитория 304) / Legal Frames for Development of the Electronic State (lectures)  Lecturer Bodakova Olga (classroom 304)",
+    "summary": "Legal Frames for Development of the Electronic State",
+    "room": "304",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-20",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Исследовательский семинар (лекция) лектор Юсупов Павел (аудитория 304) /   Academic Research (lectures)  Lecturer Yusupau Pavel (classroom 304)",
+    "summary": "Academic Research",
+    "room": "304",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-21",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Актуальные проблемы регулирования и реализации публично-правовых отношений (лекция) лектор Калинин Сергей (аудитория 304) / Actual Problems of Regulation and Realization of Public Law Relations  (lectures) Lecturer  Kalinin Siarhei     (classroom 304)",
+    "summary": "Actual Problems of Regulation and Realization of Public Law Relations",
+    "room": "304",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-21",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Правовое обеспечение развития электронного государства (лекция) лектор Бодакова Ольга (аудитория 304) / Legal Frames for Development of the Electronic State (lectures)  Lecturer Bodakova Olga (classroom 304)",
+    "summary": "Legal Frames for Development of the Electronic State",
+    "room": "304",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-21",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Институциональное право Союзного государства, ЕАЭС и СНГ (лекция) лектор Боголейко Алина (аудитория 305)   / Institutional law of the Union State, EAEU and CIS (lectures) Lecturer Bogolejko Alina (classroom 305)",
+    "summary": "Institutional law of the Union State, EAEU and CIS",
+    "room": "305",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-21",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (лекция) лектор Иванова Татьяна (аудитория 309) / Lawmaking of Representative, Executive and Judicial Authorities (lectures) Lecturer  Ivanova Tatsiana  (classroom 309)",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "309",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-22",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Институциональное право Союзного государства, ЕАЭС и СНГ (лекция) лектор Боголейко Алина (аудитория 513)   / Institutional law of the Union State, EAEU and CIS (lectures) Lecturer Bogolejko Alina (classroom 513)",
+    "summary": "Institutional law of the Union State, EAEU and CIS",
+    "room": "513",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-22",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Актуальные проблемы регулирования и реализации публично-правовых отношений (лекция) лектор Калинин Сергей (аудитория 513) / Actual Problems of Regulation and Realization of Public Law Relations  (lectures) Lecturer  Kalinin Siarhei     (classroom 513)",
+    "summary": "Actual Problems of Regulation and Realization of Public Law Relations",
+    "room": "513",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-22",
+    "start": "17:20",
+    "end": "18:40",
+    "text": "Договорное право и составление юридических документов (лекция) лектор Лазарчук Елена (аудитория 513) / Contract Law and Legal Drafting (lectures) Lecturer Lazarchuk   Elena   (classroom 513)",
+    "summary": "Contract Law and Legal Drafting",
+    "room": "513",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-22",
+    "start": "18:50",
+    "end": "20:10",
+    "text": "Договорное право и составление юридических документов (лекция) лектор Лазарчук Елена (аудитория 513) / Contract Law and Legal Drafting (lectures) Lecturer Lazarchuk   Elena    (classroom 513)",
+    "summary": "Contract Law and Legal Drafting",
+    "room": "513",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-23",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Правовое обеспечение развития электронного государства (лекция) лектор Бодакова Ольга (аудитория 609) / Legal Frames for Development of the Electronic State (lectures)  Lecturer Bodakova Olga (classroom 609)",
+    "summary": "Legal Frames for Development of the Electronic State",
+    "room": "609",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-23",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Институциональное право Союзного государства, ЕАЭС и СНГ (лекция) лектор Боголейко Алина (аудитория 609) /  Institutional law of the Union State, EAEU and CIS (lectures) Lecturer Bogolejko Alina (classroom 609)",
+    "summary": "Institutional law of the Union State, EAEU and CIS",
+    "room": "609",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-23",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Международно-правовая охрана интеллектуальной собственности (лекция) лектор Свадковская Елена (аудитория 609) / International Protection of Intellectual Property Rights (lectures)  Lecturer Svadkovskaya Elena (room 609)",
+    "summary": "International Protection of Intellectual Property Rights",
+    "room": "609",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-23",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Исследовательский семинар (лекция) лектор Юсупов Павел (аудитория 609) /   Academic Research (lectures)  Lecturer Yusupau Pavel (classroom 609)",
+    "summary": "Academic Research",
+    "room": "609",
+    "sheet": "19.10-24.10"
+  },
+  {
+    "date": "2026-10-26",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Правовое обеспечение развития электронного государства (лекция) лектор Бодакова Ольга (аудитория 610) / Legal Frames for Development of the Electronic State (lectures)  Lecturer Bodakova Olga (classroom 610)",
+    "summary": "Legal Frames for Development of the Electronic State",
+    "room": "610",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-26",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Международно-правовая охрана интеллектуальной собственности (лекция) лектор Свадковская Елена (аудитория 609) / International Protection of Intellectual Property Rights (lectures)  Lecturer Svadkovskaya Elena (room 609)",
+    "summary": "International Protection of Intellectual Property Rights",
+    "room": "609",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-26",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (лекция) лектор Иванова Татьяна (аудитория 609) / Lawmaking of Representative, Executive and Judicial Authorities (lectures) Lecturer  Ivanova Tatsiana  (classroom 609)",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "609",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-26",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (лекция) лектор Иванова Татьяна (аудитория 609) / Lawmaking of Representative, Executive and Judicial Authorities (lectures) Lecturer  Ivanova Tatsiana  (classroom 609)",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "609",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-27",
+    "start": "09:30",
+    "end": "10:50",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 513)  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 513)",
+    "summary": "International Economic Law",
+    "room": "513",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-27",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 513)  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 513)",
+    "summary": "International Economic Law",
+    "room": "513",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-27",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Правовое обеспечение развития электронного государства (лекция) лектор Бодакова Ольга (аудитория 513) / Legal Frames for Development of the Electronic State (lectures)  Lecturer Bodakova Olga (classroom 513)",
+    "summary": "Legal Frames for Development of the Electronic State",
+    "room": "513",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-27",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Исследовательский семинар (лекция) лектор Юсупов Павел (аудитория 513) /   Academic Research (lectures)  Lecturer Yusupau Pavel (classroom 513)",
+    "summary": "Academic Research",
+    "room": "513",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-28",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Правовое обеспечение развития электронного государства (лекция) лектор Бодакова Ольга (аудитория 304) / Legal Frames for Development of the Electronic State (lectures)  Lecturer Bodakova Olga (classroom 304)",
+    "summary": "Legal Frames for Development of the Electronic State",
+    "room": "304",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-28",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Институциональное право Союзного государства, ЕАЭС и СНГ (лекция) лектор Боголейко Алина (аудитория 305)   / Institutional law of the Union State, EAEU and CIS (lectures) Lecturer Bogolejko Alina (classroom 305)",
+    "summary": "Institutional law of the Union State, EAEU and CIS",
+    "room": "305",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-28",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (лекция) лектор Иванова Татьяна (аудитория 309) / Lawmaking of Representative, Executive and Judicial Authorities (lectures) Lecturer  Ivanova Tatsiana  (classroom 309)",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "309",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-29",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (лекция) лектор Иванова Татьяна (аудитория 513) / Lawmaking of Representative, Executive and Judicial Authorities (lectures) Lecturer  Ivanova Tatsiana  (classroom 513)",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "513",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-29",
+    "start": "17:20",
+    "end": "18:40",
+    "text": "Договорное право и составление юридических документов (лекция) лектор Лазарчук Елена (аудитория 513) / Contract Law and Legal Drafting (lectures) Lecturer Lazarchuk   Elena   (classroom 513)",
+    "summary": "Contract Law and Legal Drafting",
+    "room": "513",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-29",
+    "start": "18:50",
+    "end": "20:10",
+    "text": "Договорное право и составление юридических документов (лекция) лектор Лазарчук Елена (аудитория 513) / Contract Law and Legal Drafting (lectures) Lecturer Lazarchuk   Elena    (classroom 513)",
+    "summary": "Contract Law and Legal Drafting",
+    "room": "513",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-30",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Институциональное право Союзного государства, ЕАЭС и СНГ (лекция) лектор Боголейко Алина (аудитория 609)   / Institutional law of the Union State, EAEU and CIS (lectures) Lecturer Bogolejko Alina (classroom 609)",
+    "summary": "Institutional law of the Union State, EAEU and CIS",
+    "room": "609",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-30",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Исследовательский семинар (лекция) лектор Юсупов Павел (аудитория 609) /   Academic Research (lectures)  Lecturer Yusupau Pavel (classroom 609)",
+    "summary": "Academic Research",
+    "room": "609",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-30",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Исследовательский семинар (лекция) лектор Юсупов Павел (аудитория 609) /   Academic Research (lectures)  Lecturer Yusupau Pavel (classroom 609)",
+    "summary": "Academic Research",
+    "room": "609",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-31",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 609)  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 609)",
+    "summary": "International Economic Law",
+    "room": "609",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-10-31",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 609)  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 609)",
+    "summary": "International Economic Law",
+    "room": "609",
+    "sheet": "26.10-31.10"
+  },
+  {
+    "date": "2026-11-02",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Исследовательский семинар (лекция) лектор Юсупов Павел (аудитория 610 ) /   Academic Research (lectures)  Lecturer Yusupau Pavel (classroom 610 )",
+    "summary": "Academic Research",
+    "room": "610",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-02",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Исследовательский семинар (лекция) лектор Юсупов Павел (аудитория 610 ) /   Academic Research (lectures)  Lecturer Yusupau Pavel (classroom  610)",
+    "summary": "Academic Research",
+    "room": "610",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-03",
+    "start": "09:30",
+    "end": "10:50",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 513 )  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 513)",
+    "summary": "International Economic Law",
+    "room": "513",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-03",
+    "start": "11:00",
+    "end": "12:20",
+    "text": "Международное экономическое право (лекция) лектор Лапутько Ксения (аудитория 513 )  / International Economic Law (lectures) Lecturer   Laputko Kseniya (classroom 513 )",
+    "summary": "International Economic Law",
+    "room": "513",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-03",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (лекция) лектор Иванова Татьяна (аудитория 513 ) / Lawmaking of Representative, Executive and Judicial Authorities (lectures) Lecturer  Ivanova Tatsiana  (classroom 513 )",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "513",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-03",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Исследовательский семинар (лекция) лектор Юсупов Павел (аудитория 513 ) /   Academic Research (lectures)  Lecturer Yusupau Pavel (classroom 513)",
+    "summary": "Academic Research",
+    "room": "513",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-04",
+    "start": "12:40",
+    "end": "14:00",
+    "text": "Актуальные проблемы регулирования и реализации публично-правовых отношений (лекция) лектор Василевич Григорий (аудитория 305) / Actual Problems of Regulation and Realization of Public Law Relations  (lectures) Lecturer Vasilevich Grigory     (classroom 305)",
+    "summary": "Actual Problems of Regulation and Realization of Public Law Relations",
+    "room": "305",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-04",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (семинар) лектор Иванова Татьяна (аудитория 512 ) / Lawmaking of Representative, Executive and Judicial Authorities (seminar) Lecturer  Ivanova Tatsiana  (classroom 512)",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "512",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-04",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Актуальные проблемы регулирования и реализации публично-правовых отношений (семинар) лектор Хашковский Никита (аудитория 512 ) / Actual Problems of Regulation and Realization of Public Law Relations  (seminar) Lecturer  Khashkovsky Nikita  (classroom 512)",
+    "summary": "Actual Problems of Regulation and Realization of Public Law Relations",
+    "room": "512",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-05",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (семинар) лектор Иванова Татьяна (аудитория 508 ) / Lawmaking of Representative, Executive and Judicial Authorities (seminar) Lecturer  Ivanova Tatsiana  (classroom 508 )",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "508",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-05",
+    "start": "15:50",
+    "end": "17:10",
+    "text": "Международно-правовая охрана интеллектуальной собственности (семинар) лектор Шевандо Андрей (аудитория 508) / International Protection of Intellectual Property Rights (seminar)  Lecturer Shevando Andrey (room 508)",
+    "summary": "International Protection of Intellectual Property Rights",
+    "room": "508",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-05",
+    "start": "17:20",
+    "end": "18:40",
+    "text": "Договорное право и составление юридических документов (лекция) лектор Лазарчук Елена (аудитория 513 ) / Contract Law and Legal Drafting (lectures) Lecturer Lazarchuk   Elena   (classroom 513 )",
+    "summary": "Contract Law and Legal Drafting",
+    "room": "513",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-05",
+    "start": "18:50",
+    "end": "20:10",
+    "text": "Договорное право и составление юридических документов (лекция) лектор Лазарчук Елена (аудитория 513 ) / Contract Law and Legal Drafting (lectures) Lecturer Lazarchuk   Elena    (classroom 513 )",
+    "summary": "Contract Law and Legal Drafting",
+    "room": "513",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-06",
+    "start": "17:20",
+    "end": "18:40",
+    "text": "Правотворчество органов представительной, исполнительной и судебной власти (лекция) лектор Иванова Татьяна (аудитория 609) / Lawmaking of Representative, Executive and Judicial Authorities (lectures) Lecturer  Ivanova Tatsiana  (classroom 609  )",
+    "summary": "Lawmaking of Representative, Executive and Judicial Authorities",
+    "room": "609",
+    "sheet": "02.11-07.11"
+  },
+  {
+    "date": "2026-11-06",
+    "start": "18:50",
+    "end": "20:10",
+    "text": "Актуальные проблемы регулирования и реализации публично-правовых отношений (лекция) лектор Василевич Григорий (аудитория 609) / Actual Problems of Regulation and Realization of Public Law Relations  (lectures) Lecturer Vasilevich Grigory     (classroom 609 )",
+    "summary": "Actual Problems of Regulation and Realization of Public Law Relations",
+    "room": "609",
+    "sheet": "02.11-07.11"
+  }
+]
