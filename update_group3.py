@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Crawl law.bsu.by "Class Schedule 3,4,5,6,7,8 groups" xlsx,
-extract Group 3 only, and generate an iCalendar (.ics) file.
+extract Group 3 only, translate course names/descriptions to Chinese,
+and generate an iCalendar (.ics) file.
 Re-run weekly (every Saturday) to refresh the feed.
 """
 import ssl, re, json, os, urllib.request, hashlib
@@ -26,6 +27,19 @@ DATE_RE = re.compile(r"(\d{1,2})\.(\d{1,2})")
 TIME_RE = re.compile(r"(\d{1,2})[.:](\d{2})\s*-\s*(\d{1,2})[.:](\d{2})")
 YEAR_RE = re.compile(r"(\d{4})\s*/\s*(\d{4})")
 ROOM_RE = re.compile(r"(?:room|classroom|аудитория|ауд\.?)\s*(\d+)", re.I)
+
+# English course name -> Chinese translation (key = text produced by english_title)
+TRANSLATIONS = {
+    "Actual Problems of Regulation and Realization of Public Law Relations": "公法关系规制与实施的实际问题",
+    "Modern Problems and Methodology of Legal Science": "法律科学的现代问题与方法论",
+    "International Economic Law": "国际经济法",
+    "Legal Frames for Development of the Electronic State": "电子政务发展的法律框架",
+    "Institutional law of the Union State, EAEU and CIS": "联盟国、欧亚经济联盟与独联体的制度法",
+    "Contract Law and Legal Drafting": "合同法与法律文书起草",
+    "International Protection of Intellectual Property Rights": "知识产权的国际保护",
+    "Lawmaking of Representative, Executive and Judicial Authorities": "立法、行政与司法机关的立法活动",
+    "Academic Research": "学术研究（研讨课）",
+}
 
 
 def download():
@@ -69,19 +83,35 @@ def room_of(text):
     return m.group(1) if m else ""
 
 
+def lecturer_of(text):
+    m = re.search(r"Lecturer\s+([A-Za-z][A-Za-z .'-]+?)(?:\s*\(|$)", text or "", re.I)
+    return m.group(1).strip() if m else ""
+
+
+def type_zh(text):
+    low = (text or "").lower()
+    if "семинар" in low or "seminar" in low:
+        return "研讨课"
+    if "лекц" in low or "lecture" in low:
+        return "讲座"
+    return ""
+
+
+def to_chinese(title):
+    return TRANSLATIONS.get(title, title)
+
+
 def extract(path):
     wb = openpyxl.load_workbook(path, data_only=True)
     events = []
     year = 2026
     for ws in wb.worksheets:
-        # find academic year in the sheet
         for row in ws.iter_rows(values_only=True):
             for v in row:
                 if isinstance(v, str) and "учебн" in v.lower():
                     ym = YEAR_RE.search(v)
                     if ym:
                         year = int(ym.group(1))
-        # find header row
         hdr = None
         for r in range(1, ws.max_row + 1):
             if "Group 3" in str(ws.cell(row=r, column=GROUP3_COL).value or ""):
@@ -89,7 +119,6 @@ def extract(path):
                 break
         if hdr is None:
             continue
-        # find first data row (a weekday in column A)
         start = None
         for r in range(hdr + 1, ws.max_row + 1):
             a = ws.cell(row=r, column=DATE_COL).value
@@ -119,30 +148,40 @@ def extract(path):
                         "start": t1.strftime("%H:%M"),
                         "end": t2.strftime("%H:%M"),
                         "text": c.strip(),
-                        "summary": english_title(c),
+                        "summary_en": english_title(c),
                         "room": room_of(c),
                         "sheet": ws.title,
                     })
-    # dedupe & sort
     seen, uniq = set(), []
     for e in events:
-        key = (e["date"], e["start"], e["summary"])
+        key = (e["date"], e["start"], e["summary_en"])
         if key in seen:
             continue
         seen.add(key)
         uniq.append(e)
     uniq.sort(key=lambda e: (e["date"], e["start"]))
+    for e in uniq:
+        e["summary_zh"] = to_chinese(e["summary_en"])
+        e["lecturer"] = lecturer_of(e["text"])
+        e["type_zh"] = type_zh(e["text"])
     return uniq
+
+
+def ical_escape(s):
+    return (s.replace("\\", "\\\\")
+             .replace(";", "\\;")
+             .replace(",", "\\,")
+             .replace("\n", "\\n"))
 
 
 def to_ics(events):
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
-        "PRODID:-//law.bsu.by//Group3 Schedule//RU",
+        "PRODID:-//law.bsu.by//Group3 Schedule//ZH",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
-        "X-WR-CALNAME:Group 3 Class Schedule (law.bsu.by)",
+        "X-WR-CALNAME:Group 3 课表（白俄罗斯国立大学法学院）",
         "X-WR-TIMEZONE:Europe/Minsk",
         "BEGIN:VTIMEZONE",
         "TZID:Europe/Minsk",
@@ -159,10 +198,17 @@ def to_ics(events):
         d = e["date"].replace("-", "")
         st = e["start"].replace(":", "")
         en = e["end"].replace(":", "")
-        uid = hashlib.md5((e["date"] + e["start"] + e["summary"]).encode("utf-8")).hexdigest()
-        summary = (e["summary"] or e["text"])[:150].replace("\\", "").replace(";", ",").replace("\n", " ")
-        desc = e["text"].replace("\\", "").replace("\n", " ")[:500]
-        loc = e["room"]
+        uid = hashlib.md5((e["date"] + e["start"] + e["summary_en"]).encode("utf-8")).hexdigest()
+        summary = ical_escape(e["summary_zh"])
+        parts = ["课程：" + e["summary_zh"]]
+        if e["type_zh"]:
+            parts.append("形式：" + e["type_zh"])
+        if e["lecturer"]:
+            parts.append("教师：" + e["lecturer"])
+        if e["room"]:
+            parts.append("教室：" + e["room"])
+        desc = ical_escape("\n".join(parts))
+        loc = "教室 " + e["room"] if e["room"] else ""
         lines += [
             "BEGIN:VEVENT",
             "UID:%s@law.bsu.by" % uid,
@@ -174,7 +220,7 @@ def to_ics(events):
             "SEQUENCE:0",
         ]
         if loc:
-            lines.append("LOCATION:Classroom %s" % loc)
+            lines.append("LOCATION:%s" % ical_escape(loc))
         if desc:
             lines.append("DESCRIPTION:%s" % desc)
         lines.append("END:VEVENT")
@@ -193,4 +239,4 @@ if __name__ == "__main__":
         f.write(to_ics(events))
     print("events=%d -> %s" % (len(events), OUT_ICS))
     for e in events:
-        print(e["date"], e["start"], "-", e["end"], "|", e["summary"], "|", e["room"])
+        print(e["date"], e["start"], "-", e["end"], "|", e["summary_zh"], "|", e["type_zh"], "|", e["lecturer"], "|", e["room"])
