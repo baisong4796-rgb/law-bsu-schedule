@@ -196,6 +196,27 @@ def ical_escape(s):
              .replace("\n", "\\n"))
 
 
+def fold_line(line, limit=75):
+    """Fold an iCalendar line so no physical line exceeds `limit` octets (RFC 5545).
+    Continuation lines are prefixed with a single space; UTF-8 sequences are never split."""
+    if len(line.encode("utf-8")) <= limit:
+        return line
+    chunks = []
+    cur = ""
+    cur_b = 0
+    for ch in line:
+        b = len(ch.encode("utf-8"))
+        if cur_b + b > limit:
+            chunks.append(cur)
+            cur = " " + ch
+            cur_b = 1 + b
+        else:
+            cur += ch
+            cur_b += b
+    chunks.append(cur)
+    return "\r\n".join(chunks)
+
+
 def to_ics(events):
     lines = [
         "BEGIN:VCALENDAR",
@@ -249,7 +270,7 @@ def to_ics(events):
             lines.append("DESCRIPTION:%s" % desc)
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
-    return "\r\n".join(lines) + "\r\n"
+    return "\r\n".join(fold_line(ln) for ln in lines) + "\r\n"
 
 
 if __name__ == "__main__":
