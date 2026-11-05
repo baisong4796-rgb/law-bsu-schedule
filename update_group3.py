@@ -3,8 +3,8 @@
 """
 Crawl law.bsu.by "Class Schedule 3,4,5,6,7,8 groups" xlsx,
 extract Group 3 only, translate course names/descriptions to Chinese,
-and generate an iCalendar (.ics) file.
-Re-run weekly (every Saturday) to refresh the feed.
+show lecturer names in Chinese + English, and generate an iCalendar (.ics).
+Re-run weekly (every Friday) to refresh the feed.
 """
 import ssl, re, json, os, urllib.request, hashlib
 from datetime import datetime, date, time, timedelta, timezone
@@ -39,6 +39,19 @@ TRANSLATIONS = {
     "International Protection of Intellectual Property Rights": "知识产权的国际保护",
     "Lawmaking of Representative, Executive and Judicial Authorities": "立法、行政与司法机关的立法活动",
     "Academic Research": "学术研究（研讨课）",
+}
+
+# English lecturer name -> Chinese transliteration (音译)
+LECTURER_ZH = {
+    "Khashkovsky Nikita": "哈什科夫斯基·尼基塔",
+    "Kalinin Siarhei": "卡利宁·谢尔盖",
+    "Laputko Kseniya": "拉普季科·克谢尼娅",
+    "Bodakova Olga": "博达科娃·奥尔加",
+    "Bogolejko Alina": "博戈列伊科·阿丽娜",
+    "Lazarchuk Elena": "拉扎尔丘克·叶莲娜",
+    "Svadkovskaya Elena": "斯瓦德科夫斯卡娅·叶莲娜",
+    "Ivanova Tatsiana": "伊万诺娃·塔季扬娜",
+    "Yusupau Pavel": "尤苏波夫·帕维尔",
 }
 
 
@@ -85,7 +98,15 @@ def room_of(text):
 
 def lecturer_of(text):
     m = re.search(r"Lecturer\s+([A-Za-z][A-Za-z .'-]+?)(?:\s*\(|$)", text or "", re.I)
-    return m.group(1).strip() if m else ""
+    return re.sub(r"\s+", " ", m.group(1)).strip() if m else ""
+
+
+def lecturer_display(text):
+    name = lecturer_of(text)
+    if not name:
+        return ""
+    zh = LECTURER_ZH.get(name)
+    return (zh + " (" + name + ")") if zh else name
 
 
 def type_zh(text):
@@ -163,6 +184,7 @@ def extract(path):
     for e in uniq:
         e["summary_zh"] = to_chinese(e["summary_en"])
         e["lecturer"] = lecturer_of(e["text"])
+        e["teacher_display"] = lecturer_display(e["text"])
         e["type_zh"] = type_zh(e["text"])
     return uniq
 
@@ -199,12 +221,14 @@ def to_ics(events):
         st = e["start"].replace(":", "")
         en = e["end"].replace(":", "")
         uid = hashlib.md5((e["date"] + e["start"] + e["summary_en"]).encode("utf-8")).hexdigest()
-        summary = ical_escape(e["summary_zh"])
+        teacher = e.get("teacher_display", "")
+        summary_text = e["summary_zh"] + ("｜" + teacher if teacher else "")
+        summary = ical_escape(summary_text)
         parts = ["课程：" + e["summary_zh"]]
         if e["type_zh"]:
             parts.append("形式：" + e["type_zh"])
-        if e["lecturer"]:
-            parts.append("教师：" + e["lecturer"])
+        if teacher:
+            parts.append("教师：" + teacher)
         if e["room"]:
             parts.append("教室：" + e["room"])
         desc = ical_escape("\n".join(parts))
@@ -239,4 +263,4 @@ if __name__ == "__main__":
         f.write(to_ics(events))
     print("events=%d -> %s" % (len(events), OUT_ICS))
     for e in events:
-        print(e["date"], e["start"], "-", e["end"], "|", e["summary_zh"], "|", e["type_zh"], "|", e["lecturer"], "|", e["room"])
+        print(e["date"], e["start"], "-", e["end"], "|", e["summary_zh"], "|", e["teacher_display"], "|", e["room"])
