@@ -6,7 +6,7 @@ extract Group 3 only, translate course names/descriptions to Chinese,
 show lecturer names in Chinese + English, and generate an iCalendar (.ics).
 Re-run weekly (every Friday) to refresh the feed.
 """
-import ssl, re, json, os, urllib.request, hashlib
+import ssl, re, json, os, urllib.request, hashlib, time as _time
 from datetime import datetime, date, time, timedelta, timezone
 
 import openpyxl
@@ -59,16 +59,27 @@ def download():
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
-    req = urllib.request.Request(XLSX_URL, headers={"User-Agent": "Mozilla/5.0"})
-    try:
-        with urllib.request.urlopen(req, context=ctx, timeout=60) as r:
-            data = r.read()
-        with open(LOCAL_XLSX, "wb") as f:
-            f.write(data)
-        return LOCAL_XLSX
-    except Exception as e:
-        print("download failed (%s), using local copy" % e)
-        return LOCAL_XLSX if os.path.exists(LOCAL_XLSX) else None
+    ua = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+          "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+    last_err = None
+    for attempt in range(1, 4):
+        try:
+            req = urllib.request.Request(XLSX_URL, headers={"User-Agent": ua})
+            with urllib.request.urlopen(req, context=ctx, timeout=60) as r:
+                data = r.read()
+            if data[:2] != b"PK":
+                raise ValueError("not a valid xlsx (got %d bytes)" % len(data))
+            with open(LOCAL_XLSX, "wb") as f:
+                f.write(data)
+            print("downloaded %d bytes (attempt %d)" % (len(data), attempt))
+            return LOCAL_XLSX
+        except Exception as e:
+            last_err = e
+            print("download attempt %d failed: %s" % (attempt, e))
+            if attempt < 3:
+                _time.sleep(5)
+    print("download failed after 3 attempts (%s), using local copy" % last_err)
+    return LOCAL_XLSX if os.path.exists(LOCAL_XLSX) else None
 
 
 def normalize_time(s):
