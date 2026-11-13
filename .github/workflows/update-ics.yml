@@ -3,7 +3,7 @@ name: Update Group 3 class schedule
 on:
   schedule:
     # Every Friday 06:00 UTC = 09:00 Europe/Minsk
-    - cron: '0 6 * * 5'
+    - cron: '0 17 * * 4'
   workflow_dispatch: {}
 
 permissions:
