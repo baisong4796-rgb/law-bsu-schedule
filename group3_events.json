@@ -1534,19 +1534,6 @@
     "type_zh": "研讨课"
   },
   {
-    "date": "2026-11-25",
-    "start": "12:40",
-    "end": "14:00",
-    "text": "Правовое обеспечение развития электронного государства (семинар) лектор Бодакова Ольга (аудитория 308) / Legal Frames for Development of the Electronic State (seminar)  Lecturer Bodakova Olga (classroom 308)",
-    "summary_en": "Legal Frames for Development of the Electronic State",
-    "room": "308",
-    "sheet": "23.11-28.11",
-    "summary_zh": "电子政务发展的法律框架",
-    "lecturer": "Bodakova Olga",
-    "teacher_display": "博达科娃·奥尔加 (Bodakova Olga)",
-    "type_zh": "研讨课"
-  },
-  {
     "date": "2026-11-26",
     "start": "14:10",
     "end": "15:30",
@@ -1635,6 +1622,19 @@
     "summary_zh": "立法、行政与司法机关的立法活动",
     "lecturer": "Ivanova Tatsiana",
     "teacher_display": "伊万诺娃·塔季扬娜 (Ivanova Tatsiana)",
+    "type_zh": "研讨课"
+  },
+  {
+    "date": "2026-11-28",
+    "start": "14:10",
+    "end": "15:30",
+    "text": "Правовое обеспечение развития электронного государства (семинар) лектор Бодакова Ольга (аудитория 513) / Legal Frames for Development of the Electronic State (seminar)  Lecturer Bodakova Olga (classroom 513)",
+    "summary_en": "Legal Frames for Development of the Electronic State",
+    "room": "513",
+    "sheet": "23.11-28.11",
+    "summary_zh": "电子政务发展的法律框架",
+    "lecturer": "Bodakova Olga",
+    "teacher_display": "博达科娃·奥尔加 (Bodakova Olga)",
     "type_zh": "研讨课"
   }
 ]
